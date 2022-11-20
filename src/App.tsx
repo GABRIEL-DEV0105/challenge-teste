@@ -1,7 +1,10 @@
+import { Home } from './pages/home/index'
+
 function App() {
 
   return (
-    <div className="App">Challenge NG CASH
+    <div>
+      <Home/>
     </div>
   )
 }
