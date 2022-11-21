@@ -1,10 +1,12 @@
-import { Home } from './pages/home/index'
+import GlobalStyle from './global-styled'
+import { Cadastrar } from './pages/registration'
 
 function App() {
 
   return (
     <div>
-      <Home/>
+      <GlobalStyle/>
+        <Cadastrar/>
     </div>
   )
 }
