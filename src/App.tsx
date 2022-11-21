@@ -1,12 +1,12 @@
 import GlobalStyle from './global-styled'
-import { Subscribe } from './pages/subscribe'
+import { Login } from './pages/login'
 
 function App() {
 
   return (
     <div>
       <GlobalStyle/>
-        <Subscribe/>
+        <Login/>
     </div>
   )
 }
