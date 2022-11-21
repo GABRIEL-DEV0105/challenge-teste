@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 type CardProps = {
   w?: string,
-  gap?: string
+  h?: string,
+  gap?: string,
+  maxW?: string,
+  minW?: string,
+  p?: string,
 }
 
 export const Card = styled.div<CardProps>`
@@ -13,5 +17,8 @@ export const Card = styled.div<CardProps>`
   gap: ${({gap}) => gap ? gap : '1rem'};
   flex-direction: column; 
   width: ${({w}) => w ? w : 'auto'};
-  padding: 3em;
- `
+  max-width: ${({maxW}) => maxW ? maxW : 'auto'};
+  min-width: ${({minW}) => minW ? minW : 'auto'};
+  padding: ${({p}) => p ? p : 'none'};
+  height: ${({h}) => h ? h : 'auto'};
+`

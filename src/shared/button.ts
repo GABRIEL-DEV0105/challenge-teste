@@ -7,9 +7,14 @@ type ButtonProps = {
 export const Button = styled.button<ButtonProps>`
   background-color: black;
   border: none;
-  border-radius: 1em;
+  border-radius: 1Rem;
   color: white;
-  padding: 1em;
-  font-size: 1em;
+  cursor: pointer;
+  padding: 0 1rem;
+  font-size: 1rem;
+  height: 2.5rem;
   width: ${props => props.w ? props.w : '100%'};
+  :hover{
+    background-color: #3A3A3A
+  }
 `
