@@ -1,11 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 type ButtonProps = {
-  w?: string,
+  w?: string
+  bg?: string
+  bgHover?: string 
 }
 
 export const Button = styled.button<ButtonProps>`
-  background-color: black;
+  ${({w, bg, bgHover}) => css`
+  background-color: ${bg ?? "black"};
   border: none;
   border-radius: 1Rem;
   color: white;
@@ -13,8 +16,10 @@ export const Button = styled.button<ButtonProps>`
   padding: 0 1rem;
   font-size: 1rem;
   height: 2.5rem;
-  width: ${props => props.w ? props.w : '100%'};
+  width: ${w ?? '100%'};
   :hover{
-    background-color: #3A3A3A
+    background-color: ${bgHover ?? '#3A3A3A'};
   }
+  
+`}
 `

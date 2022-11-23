@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
-export const FormContainer = styled.form`
+type formProps = {
+  gap?: string
+  align?: string
+}
+
+export const FormContainer = styled.form<formProps>`
   display: flex;
   flex-direction: column;
-  align-items:  center;
-  gap: 2em;
+  align-items: ${({align}) => align ? align : "center"};
+  gap: ${({gap}) => gap ? gap : "2rem"};
 `
