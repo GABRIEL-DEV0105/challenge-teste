@@ -1,13 +1,15 @@
 import GlobalStyle from './global-styled'
-import { Home } from './pages/home'
-import { Subscribe } from './pages/subscribe'
+import {  Router } from './Router'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
   return (
     <div>
-      <GlobalStyle/>
-        <Home/>
+      <BrowserRouter>
+        <GlobalStyle/>
+        <Router/>
+      </BrowserRouter> 
     </div>
   )
 }
