@@ -35,12 +35,9 @@ export function Body() {
               <FilterButton>Entrada</FilterButton>
               <FilterButton>Saída</FilterButton>
             </Box>
+            {
             <CardTransf/>
-            <CardTransf/>
-            <CardTransf/>
-            <CardTransf/>
-            <CardTransf/>
-            <CardTransf/>
+            }
           </Card>
           <Card p="2.5rem" gap="1rem">
           <Title fw="600" size="1.5rem" align="flex-start"

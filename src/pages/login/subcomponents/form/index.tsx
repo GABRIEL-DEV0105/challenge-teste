@@ -5,7 +5,6 @@ import { FormContainer } from "./styles"
 
 
 type FormElements ={
-  email: HTMLInputElement
   password: HTMLInputElement
   user: HTMLInputElement
 } & HTMLFormControlsCollection
